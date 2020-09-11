@@ -1,0 +1,32 @@
+LOAD 'forbid_truncate';
+CREATE TEMP TABLE test (a int, b char(20));
+INSERT INTO test VALUES(generate_series(1, 10), 'aaa');
+TRUNCATE TABLE test;
+ERROR:  forbid truncate
+SELECT * FROM test;
+ a  |          b           
+----+----------------------
+  1 | aaa                 
+  2 | aaa                 
+  3 | aaa                 
+  4 | aaa                 
+  5 | aaa                 
+  6 | aaa                 
+  7 | aaa                 
+  8 | aaa                 
+  9 | aaa                 
+ 10 | aaa                 
+(10 rows)
+
+ALTER TABLE test ADD
+	foo VARCHAR(30)
+;
+ALTER TABLE test ALTER COLUMN
+	foo TYPE VARCHAR(20)
+;
+ALTER TABLE test DROP
+	foo
+;
+ALTER TABLE test
+RENAME TO test2;
+DROP TABLE test2;

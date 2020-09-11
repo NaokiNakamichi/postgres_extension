@@ -1,0 +1,5 @@
+# forbid_truncate extension
+comment = 'forbid truncate'
+default_version = '1.0'
+module_pathname = '$libdir/forbid_truncate'
+relocatable = true
