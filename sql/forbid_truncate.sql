@@ -1,9 +1,5 @@
 LOAD 'forbid_truncate';
 
---
--- simple and compound statements
---
-
 CREATE TEMP TABLE test (a int, b char(20));
 
 INSERT INTO test VALUES(generate_series(1, 10), 'aaa');
