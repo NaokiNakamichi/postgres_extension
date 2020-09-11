@@ -8,3 +8,5 @@ In order to enable this module in a PostgreSQL instance, the following parameter
 ```
     shared_preload_libraries = 'forbid_truncate'
 ```
+
+test 
