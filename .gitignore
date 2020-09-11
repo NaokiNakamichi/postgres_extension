@@ -1,4 +1,6 @@
 # Generated subdirectories
+*.o
+*.so
+
 /log/
 /results/
-/tmp_check/
