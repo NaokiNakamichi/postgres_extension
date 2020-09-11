@@ -1,5 +1,7 @@
 language: c
 compiler: gcc
+
+env:
    matrix:
       - PGBRANCH=master
       - PGBRANCH=REL_13_STABLE
