@@ -1,5 +1,9 @@
 # forbid_truncate
 
+This is released under the [PostgreSQL License](https://opensource.org/licenses/postgresql), a liberal Open Source license, similar to the BSD or MIT licenses.
+
+
+
 ## test status
 [![Build Status](https://travis-ci.org/NaokiNakamichi/postgres_extension.svg?branch=master)](https://travis-ci.org/NaokiNakamichi/postgres_extension)
 
